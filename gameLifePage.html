@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Home Page</title>
+</head>
+<body>
+    
+
+    <div class="topDiv">
+        <!-- <a href="https://github.com/adrescu" target="_blank" rel="noopener noreferrer">adrescu</a> -->
+        <img src="images/photo3.jpg" alt="">
+    </div>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">About Me</a>
+            </li>
+            <li>
+                <a>Projects</a>
+                <div class="dropdown-content">
+                    <a href="gameLifePage.html">Game of Life</a>
+                    <!-- <a href="#">Gravity Game</a>
+                    <a href="#">Mandelbrot Set</a> -->
+                </div>
+            </li>
+            <li>
+                <a>Teachings</a>
+                <div class="dropdown-content">
+                    <!-- <a href="#">Coding Mandelbrot Set</a> -->
+                    <a href="codingGrav.html">Coding Gravity</a>
+                    <!-- <a href="#">Using Git</a> -->
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="rulesClose" class="outRules">
+        <div class="rulesPopUp">
+            <h3>Rules</h3>
+            <p>Select a cell by clicking on it.
+            This will activate it or deactivate it.
+            Any activated cell with 2 or 3 neighbors continues living.
+            Any deactivated cell with 3 activated neighbors will become activated.
+            All other cells will keep their current state.
+            To start off I included one of the first patterns I found.
+            Just click play and watch it go!
+            </p>
+            <button id="lifeRulesCloseButton" onclick="lifeRulesClose()">Close</button>
+        </div>
+    </div>
+    <div class="content">
+    <div class="imgText1">
+        <img src="images/conway.png" alt="">
+        <div class="textBlock1">
+        <h2>Conway's Game of Life</h2>
+        <p > Conway was a genuis mathemitician famous for his contributions to
+            mathematics in the fields of group theory, number theory, algebra, geometric topology, 
+            theoretical physics, combinatorial game theory, and geometry. He's also famous for his cellular automation he created called the Game of Life. For those unfamiliar
+            with cellular automata they are essentially virtual worlds created with arbitrary rules that when played 
+            out over continued iterations create fascinating patterns. In this specific world the "living" beings are 
+            boxes within a square grid. These boxes can either be alive or dead and this is represented by their current color.
+            I'm fascinated by the spontaneous patterns that emerge from this continual iteration of specific rules and so 
+            I wanted to re-create it from scratch! 
+            
+
+        </p>
+        </div>
+    </div>
+    <div class="barSep"></div>
+    <h1>Game of Life</h1>
+
+    <div class="lifeGameButtons">
+        <button id="gameOfLifeButton" onclick="gameOfLifePlay()">Play</button>
+        <button id="lifeRulesButton" onclick="gameOfLifeRules()">Rules</button>
+        <button id="lifeClearButton" onclick="gameOfLifeClear()">Clear Board</button>
+        
+        <!-- <button id="lifeGridButton" onclick="gameOfLifeGrid()">Grid Off</button> -->
+
+        <button id="lifePresetButton" onclick="loadExample1()">Ex. 1</button>
+        <button id="lifePresetButton" onclick="loadExample2()">Ex. 2</button>
+        <button id="lifePresetButton" onclick="loadExample3()"">Ex. 3</button>
+    </div>
+    <canvas id="gameOfLifeScreen" width="800" height="400"></canvas>
+    <div class="barSep"></div>
+    </div>
+    
+    <div class="contacts">
+        <a href = "mailto: alexandrescu.dev@gmail.com">alexandrescu.dev@gmail.com</a>
+    </div>
+    
+    <script src="gameLifeCode.js"></script>
+</body>
+</html>

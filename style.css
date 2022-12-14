@@ -1,0 +1,402 @@
+.rulesPopUp {
+    background-color: white;
+    width: 450px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    border: 2px solid black;
+    z-index: 20;
+    position: fixed;
+    top: 200px;
+    /* display: none; */
+}
+
+.rulesPopUp p {
+    max-width: 70%;
+    margin: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.rulesPopUp h3 {
+    margin-top: 15px;
+    margin-bottom: 2px;
+}
+
+.outRules {
+    display: none;
+    justify-content: center;
+}
+
+
+#gameOfLifeScreen {
+    border: 2px solid black;
+}
+
+#gameScreen {
+    border: 2px dotted black;
+    border-radius: 0px;
+    margin-bottom: 50px;
+    margin-left: 3rem;
+    }
+
+#gameButton:hover {
+    background-color: rgb(231, 231, 231);
+    color:rgb(0, 0, 0);
+}
+
+#gameButton {
+    margin-left: 0px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+#gameOfLifeButton:hover {
+    background-color: rgb(231, 231, 231);
+    color:rgb(0, 0, 0);
+}
+
+#gameOfLifeButton {
+    margin-left: 0px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+/* lifeRulesCloseButton */
+
+
+#lifeGridButton:hover {
+    background-color: rgb(231, 231, 231);
+    color:rgb(0, 0, 0);
+}
+
+#lifeGridButton {
+    margin-left: 0px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+
+#lifeClearButton:hover {
+    background-color: rgb(231, 231, 231);
+    color:rgb(0, 0, 0);
+}
+
+#lifeClearButton {
+    margin-left: 0px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+
+#lifeRulesCloseButton:hover {
+    background-color: rgb(231, 231, 231);
+    color:rgb(0, 0, 0);
+}
+
+#lifeRulesCloseButton {
+    margin-left: 0px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+
+#lifeRulesButton:hover {
+    background-color: rgb(231, 231, 231);
+    color:rgb(0, 0, 0);
+}
+
+#lifeRulesButton {
+    margin-left: 0px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+#lifePresetButton:hover {
+    background-color: rgb(231, 231, 231);
+    color:rgb(0, 0, 0);
+}
+
+#lifePresetButton {
+    margin-left: 0px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+    width: 50px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+
+
+.contacts {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.contacts a {
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(231, 231, 231);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.contacts p {
+    margin: 0;
+    /* max-width: 100px; */
+}
+
+.contacts a:hover {
+    color: rgb(29, 29, 29);
+    background-color: rgb(231, 231, 231);
+}
+
+.gameBanner {
+    position: absolute;
+    z-index: 1;
+    height: 200px;
+    width: 300px;
+    margin-left: 3rem;
+    display: block;
+    padding: 20px;
+}
+
+.gameOfLifeBanner {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    left: 100px;
+    
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    margin-top: 0.25px;
+    overflow-x: hidden;
+}
+
+
+.topDiv {
+    padding-top: 40px;
+    font-family: cursive;
+    font-size: 2rem;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topDiv a {
+    text-decoration: none;
+    color: white;
+    font-size: 60px;
+}
+
+
+.topDiv img {
+    width: 100%;
+    border: .1rem solid black;
+    border-left: 0;
+    border-right: 0;
+}
+
+nav {
+    position: sticky; 
+    top: 0px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    z-index: 5;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+nav li {
+    float: left;
+    margin-left: 8px;
+    margin-right: 8px;
+    cursor: default;
+  }
+  
+nav a {
+    display: block;
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+  }
+  
+nav a:hover {
+    color: rgb(214, 204, 68);
+  }
+
+.content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.content h1 {
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+
+
+.imgText1 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    
+}
+
+.imgText2 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    
+}
+
+.imgText1 img {
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    margin-right: 3rem;
+    margin-top: .5rem;
+}
+
+.imgText1 p {
+    max-width: 700px;
+    min-width: 400px;
+    margin: 0;
+    word-wrap:break-word;    
+    font-size: 23px;
+}
+
+.imgText2 p {
+    max-width: 700px;
+    min-width: 400px;
+    margin: 0;
+    word-wrap:break-word;    
+    font-size: 23px;
+}
+  
+.imgText1 h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+
+.barSep {
+    width: 80%;
+    /* min-width: 1000px; */
+    height: 10px;
+    background-color: black;
+    display: block;
+    margin-top: 110px;
+    margin-bottom: 100px;
+    border-radius: 1px;
+}
+
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-align: left;
+    text-decoration: none;
+    display: block;
+    border: 1px solid black;
+    border-top: none;
+    background-color: rgb(246, 246, 246);
+  }
+
+nav li:hover .dropdown-content{
+    display:block;
+    
+}
+
+#codingGravBanner {
+    border: none;
+}
