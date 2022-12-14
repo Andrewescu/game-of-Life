@@ -8,8 +8,9 @@
     flex-direction: column;
     border: 2px solid black;
     z-index: 20;
-    position: fixed;
-    top: 200px;
+    position: absolute;
+    margin-top: 22px;
+    
     /* display: none; */
 }
 
@@ -259,45 +260,6 @@ body {
     border-right: 0;
 }
 
-nav {
-    position: sticky; 
-    top: 0px;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    background-color: black;
-    z-index: 5;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    
-}
-
-nav li {
-    float: left;
-    margin-left: 8px;
-    margin-right: 8px;
-    cursor: default;
-  }
-  
-nav a {
-    display: block;
-    color:white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 25px;
-  }
-  
-nav a:hover {
-    color: rgb(214, 204, 68);
-  }
 
 .content {
     display: flex;

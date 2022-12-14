@@ -4,54 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Home Page</title>
+    <title>Game Of Life</title>
 </head>
 <body>
     
 
     <div class="topDiv">
-        <!-- <a href="https://github.com/adrescu" target="_blank" rel="noopener noreferrer">adrescu</a> -->
-        <img src="images/photo3.jpg" alt="">
     </div>
 
-    <nav>
-        <ul>
-            <li>
-                <a href="index.html">About Me</a>
-            </li>
-            <li>
-                <a>Projects</a>
-                <div class="dropdown-content">
-                    <a href="gameLifePage.html">Game of Life</a>
-                    <!-- <a href="#">Gravity Game</a>
-                    <a href="#">Mandelbrot Set</a> -->
-                </div>
-            </li>
-            <li>
-                <a>Teachings</a>
-                <div class="dropdown-content">
-                    <!-- <a href="#">Coding Mandelbrot Set</a> -->
-                    <a href="codingGrav.html">Coding Gravity</a>
-                    <!-- <a href="#">Using Git</a> -->
-                </div>
-            </li>
-        </ul>
-    </nav>
+   
+    
 
-    <div id="rulesClose" class="outRules">
-        <div class="rulesPopUp">
-            <h3>Rules</h3>
-            <p>Select a cell by clicking on it.
-            This will activate it or deactivate it.
-            Any activated cell with 2 or 3 neighbors continues living.
-            Any deactivated cell with 3 activated neighbors will become activated.
-            All other cells will keep their current state.
-            To start off I included one of the first patterns I found.
-            Just click play and watch it go!
-            </p>
-            <button id="lifeRulesCloseButton" onclick="lifeRulesClose()">Close</button>
-        </div>
-    </div>
     <div class="content">
     <div class="imgText1">
         <img src="images/conway.png" alt="">
@@ -83,6 +46,20 @@
         <button id="lifePresetButton" onclick="loadExample1()">Ex. 1</button>
         <button id="lifePresetButton" onclick="loadExample2()">Ex. 2</button>
         <button id="lifePresetButton" onclick="loadExample3()"">Ex. 3</button>
+    </div>
+    <div id="rulesClose" class="outRules">
+        <div class="rulesPopUp">
+            <h3>Rules</h3>
+            <p>Select a cell by clicking on it.
+            This will activate it or deactivate it.
+            Any activated cell with 2 or 3 neighbors continues living.
+            Any deactivated cell with 3 activated neighbors will become activated.
+            All other cells will keep their current state.
+            To start off I included one of the first patterns I found.
+            Just click play and watch it go!
+            </p>
+            <button id="lifeRulesCloseButton" onclick="lifeRulesClose()">Close</button>
+        </div>
     </div>
     <canvas id="gameOfLifeScreen" width="800" height="400"></canvas>
     <div class="barSep"></div>
